@@ -1,0 +1,190 @@
+site_name: aspnetcore
+site_author: vchy
+site_description: aspnetcore学习文档
+
+# Configuration
+theme:
+  name: material
+  language: zh
+  features:
+    # - announce.dismiss
+    - content.action.edit
+    # - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    # - navigation.prune
+    # - navigation.sections
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: white
+      # accent: indigo
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to dark mode
+    - scheme: slate
+      primary: grey
+      # accent: indigo
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Fira Code
+
+  generator: false
+  status:
+    new: 最近添加
+
+plugins:
+  - search
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  # - pymdownx.magiclink:
+  #     repo_url_shorthand: true
+  #     user: squidfunk
+  #     repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - javascripts/katex.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+extra_css:
+  - stylesheets/extra.css
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+# Page tree
+nav:
+  - 0. &nbsp; 前言:
+    - index.md
+  # - 1. &nbsp; 基础开发技能:
+  #   - 1.1. &nbsp; git:
+  #   - 1.2. &nbsp; linux:
+      # - 1.3. &nbsp; 数据结构:
+      # - 1.4. &nbsp; 算法:
+        # - 1.4.10. &nbsp; 搜索:
+        #   - 1.4.10.1. &nbsp; 二分查找:
+        # - 1.4.11. &nbsp; 排序:
+        # - 1.4.15. &nbsp; 贪心:
+        #   - 1.4.15.1. &nbsp; 贪心算法说明:
+        #   - 1.4.15.2. &nbsp; 分数背包问题:
+        #   - 1.4.15.3. &nbsp; 最大容量问题:
+        #   - 1.4.15.4. &nbsp; 最大切分乘机积问题:
+        #   - 1.4.15.5. &nbsp; 小结:
+  - 2. &nbsp; c#:
+    - 2.1. &nbsp; c#语法:
+      - 2.1.1. &nbsp; 语法糖: csharp/csharp-sugar.md
+  #   - 2.2. &nbsp; .net:
+  #   - 2.3. &nbsp; dotnet CLI:
+  # - 3. &nbsp; sql:
+  #   - 3.1. &nbsp; sql基础语法:
+  - 4. &nbsp; ASP.NET Core基础:
+  #   - 4.2. &nbsp; RESTful:
+  #   - 4.3. &nbsp; Application Settings & Configurations:
+    - 4.4. &nbsp; 中间件:
+      - 4.4.1. &nbsp; 中间件基础: aspnetcore/middleware/middleware-base.md
+      - 4.4.2. &nbsp; 添加中间件方式: aspnetcore/middleware/middleware-add.md
+      - 4.4.2. &nbsp; 中间件源码解析: aspnetcore/middleware/middleware-source.md
+  #   - 4.5. &nbsp; Filters & Attributes:
+  #   - 4.6. &nbsp; Authentication:
+  #   - 4.7. &nbsp; Authorization:
+  # - 5. &nbsp; SOLID:
+  #   - 5.1 &nbsp; 单一职责原则(SRP):
+  #   - 5.2 &nbsp; 开放封闭原则(OCP):
+  #   - 5.3 &nbsp; 里氏替换原则(LSP):
+  #   - 5.4 &nbsp; 接口隔离原则(ISP):
+  #   - 5.5 &nbsp; 依赖反转原则(DIP):
+  # - 6. &nbsp; ORM:
+  #   - 6.1 &nbsp; EF Core:
+  # - 7. &nbsp; 依赖注入:
+  #   - 7.1 &nbsp; 依赖注入容器:
+  #   - 7.2 &nbsp; 依赖注入生命周期:
+  # - 9. &nbsp; 缓存:
+  #   - 9.2 &nbsp; 分布式缓存:
+  #     - 9.2.1 &nbsp; Redis:
+  # - 17. &nbsp; CI/CD:
+  #   - 17.1 &nbsp; GitHub Actions:
+  - 18. &nbsp; 设计模式:
+    - 18.1 &nbsp; 创建型模式:
+  #     - 18.1.1 &nbsp; 工厂模式:
+  #     - 18.1.2 &nbsp; 抽象工厂模式:
+      - 18.1.3 &nbsp; 单例模式: design-patterns/creational-patterns/singleton.md
+  #     - 18.1.4 &nbsp; 建造者模式:
+      - 18.1.5 &nbsp; 原型模式: design-patterns/creational-patterns/prototype.md
+    - 18.2 &nbsp; 结构型模式:
+      - 18.2.1 &nbsp; 适配器模式: design-patterns/structural-patterns/adapter.md
+  #     - 18.2.2 &nbsp; 桥接模式:
+  #     - 18.2.3 &nbsp; 组合模式:
+      - 18.2.4 &nbsp; 装饰模式: design-patterns/structural-patterns/decorator.md
+  #     - 18.2.5 &nbsp; 外观模式:
+  #     - 18.2.6 &nbsp; 享元模式:
+  #     - 18.2.7 &nbsp; 代理模式:
+    - 18.3 &nbsp; 行为型模式:
+  #     - 18.3.1 &nbsp; 责任链模式:
+  #     - 18.3.2 &nbsp; 命令模式:
+  #     - 18.3.3 &nbsp; 解释器模式:
+  #     - 18.3.4 &nbsp; 迭代器模式:
+  #     - 18.3.5 &nbsp; 中介者模式:
+  #     - 18.3.6 &nbsp; 备忘录模式:
+      - 18.3.7 &nbsp; 观察者模式: design-patterns/behavioral-patterns/observer.md
+  #     - 18.3.8 &nbsp; 状态模式:
+  #     - 18.3.9 &nbsp; 策略模式:
+  #     - 18.3.10 &nbsp; 模板方法模式:
+  #     - 18.3.11 &nbsp; 访问者模式:
+  # - 21. &nbsp; web服务器:
+  #   - 21.1 &nbsp; nginx:
+  # - 22. &nbsp; 进一步学习:
+
+
+
+
