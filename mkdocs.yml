@@ -156,7 +156,7 @@ nav:
   #   - 17.1 &nbsp; GitHub Actions:
   - 18. &nbsp; 设计模式:
     - 18.1 &nbsp; 创建型模式:
-  #     - 18.1.1 &nbsp; 工厂模式:
+      - 18.1.1 &nbsp; 工厂模式: design-patterns/creational-patterns/factory.md
   #     - 18.1.2 &nbsp; 抽象工厂模式:
       - 18.1.3 &nbsp; 单例模式: design-patterns/creational-patterns/singleton.md
   #     - 18.1.4 &nbsp; 建造者模式:
