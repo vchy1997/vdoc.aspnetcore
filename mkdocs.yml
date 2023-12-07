@@ -146,8 +146,10 @@ nav:
   #   - 5.5 &nbsp; 依赖反转原则(DIP):
   # - 6. &nbsp; ORM:
   #   - 6.1 &nbsp; EF Core:
-  # - 7. &nbsp; 依赖注入:
-  #   - 7.1 &nbsp; 依赖注入容器:
+  - 7. &nbsp; 依赖注入:
+    - 7.1 &nbsp; aspnetcore默认容器:
+      - 7.1.1.1 &nbsp; 容器基础: aspnetcore/di-container/dependency-injection.md
+      - 7.1.1.2 &nbsp; 容器源码解析: aspnetcore/di-container/dependency-injection-source.md
   #   - 7.2 &nbsp; 依赖注入生命周期:
   # - 9. &nbsp; 缓存:
   #   - 9.2 &nbsp; 分布式缓存:
